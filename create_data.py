@@ -7,6 +7,7 @@ check_data = {
     'unique': functions.unique_query,
     'sort': functions.sort_query,
     'limit': functions.limit_query,
+    'regex': functions.regex,
 }
 
 
