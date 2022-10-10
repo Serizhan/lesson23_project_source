@@ -1,4 +1,5 @@
 import functions
+from typing import Optional, List
 
 
 check_data = {
@@ -11,7 +12,7 @@ check_data = {
 }
 
 
-def build_query(cmd, param, data):
+def build_query(cmd: str, param: str, data: Optional[list]) -> List:
     if data is None:
         with open('data/apache_logs.txt') as file:
             prepared_data = list(map(lambda x: x.strip(), file))
